@@ -6,15 +6,17 @@ import Thanker from './models/thanker';
 window.parameters = parameters;
 
 export default () => {
-  const { amount, pause, mute, invert, entropy } = parameters({
+  const { amount, pause, mute, invert, entropy, skin } = parameters({
     amount: Math.floor(window.innerWidth / 320) || 1,
     pause: 1000,
     mute: false,
     invert: false,
     entropy: 0.033,
+    skin: 'default',
   });
 
   document.body.setAttribute('data-invert', invert);
+  document.body.setAttribute('data-skin', skin);
 
   const DOM = {
     container: document.getElementById('container'),
