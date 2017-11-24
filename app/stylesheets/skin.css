@@ -1,0 +1,27 @@
+body[data-skin='nude'] .input {
+  border: none;
+}
+
+body[data-skin='nude'] .them,
+body[data-skin='nude'] .indicator {
+  background-color: transparent;
+}
+
+  body[data-skin='nude'] .them:before {
+    border-left: none;
+  }
+
+body[data-skin='nude'] .me {
+  color: black;
+  background-color: transparent;
+}
+  body[data-skin='nude'] .me:before {
+    border-right: none;
+  }
+
+body[data-skin='nude'] .me,
+body[data-skin='nude'] .them,
+body[data-skin='nude'] .input,
+body[data-skin='nude'] .indicator {
+  font-size: 24px;
+}
